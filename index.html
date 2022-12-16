@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img{
+            height:355px;
+            width: auto; 
+        }
+      img:hover{
+        height: 50%;
+        width: auto;
+       animation-name: myAnim;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease;
+       /* opacity: 0.5; */
+      }  
+      @keyframes myAnim{
+        0%{opacity:0.25;}
+        25%{opacity:0.5;}
+        50%{opacity: 0;}
+        100%{opacity: 1.0;}
+      }
+      .container {
+        display: flex;
+        border: 3px solid black;
+        width: 250px;
+        height: 150px;
+        margin: 50px;
+        justify-content: center;
+      }
+      div {
+        margin: 5px;
+        align-items: center;
+      }
+      button {
+        margin-left: 60px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      input:invalid {
+        background-color: red;
+      }
+      input:valid {
+        border: 3px solid green;
+      }
+      input:focus {
+        width: 200px;
+        color: rgb(19, 3, 33);
+        background-color: rgb(170, 170, 223);
+      }
+      
+      
+      button:hover {
+        background-color: rgb(201, 32, 231);
+      }
+      .hovr button{
+        border-radius: 10px;
+        width: 200px;
+        border: 2px solid blue;
+        background-color: rgb(200, 234, 245);
+      }
+      .hovr button:hover{
+        background-color: pink;
+        box-shadow:5px 5px 20px rgb(19, 19, 164);
+      }
+
+      
+      
+    </style>
+  </head>
+  <body>
+    <img src="image.jpeg">
+    <div class="container">
+      <form>
+        <h2>Form</h2>
+        <div>
+          <input type="text" placeholder="Username" required/>
+        </div>
+        <div>
+          <input type="email" placeholder="Email" required/>
+        </div>
+        <button>change</button>
+      </form>
+    </div>
+
+    <div class="hovr">
+        <button>Hover to Blink</button>
+    </div>
+    
+  </body>
+</html>
